@@ -1,3 +1,4 @@
+<!-- Pablo  -->
 const form = document.getElementById('form');
 const email = document.getElementById('inputEmail');
 const password = document.getElementById('inputPassword');
@@ -19,3 +20,4 @@ form.addEventListener('submit', (e) => {
   }
 }
 );
+<!-- /Pablo -->
