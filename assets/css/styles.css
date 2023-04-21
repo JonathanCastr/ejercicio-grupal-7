@@ -21,8 +21,9 @@
 }
 
 .device{
-    width: 10em;
-    height: 10em;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border: 1px solid red;
 }
 .intro{
     text-align: center;
