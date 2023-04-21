@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .fondo{
     background-image: linear-gradient(
         0deg,
@@ -18,4 +21,7 @@
 .device{
     width: 8em;
     height: 8em;
+}
+.intro{
+    text-align: justify;
 }
