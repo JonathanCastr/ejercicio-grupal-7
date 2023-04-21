@@ -48,13 +48,27 @@
   </nav>
 
   <section class="shadow contact-clean" style="background: rgb(3,77,139);">
-    <form class="bg-light border rounded border-secondary shadow-lg" method="post" style="background: rgb(248,248,249);">
+    <form class="bg-light border rounded border-secondary shadow-lg" id="form" style="background: rgb(248,248,249); ">
         <h2 class="text-center">Contáctanos&nbsp;</h2>
-        <div class="form-group mb-3"><input class="form-control" id="" type="text" name="Nombre" placeholder="Nombre"></div>
-        <div class="form-group mb-3"><input class="form-control" id="" type="text" name="fono" placeholder="Fono" inputmode="tel"></div>
-        <div class="form-group mb-3"><input class="form-control" id="" type="email" name="email" placeholder="Email"></div>
-        <div class="form-group mb-3"><textarea class="form-control" id="" name="mensaje" placeholder="Mensaje" rows="14"></textarea></div>
-        <div class="form-group mb-3"><button class="btn btn-primary" type="submit">Enviar </button></div>
+        <div class="form-group mb-3">
+          <input class="form-control" id="name" type="text" name="Nombre" placeholder="Nombre">
+          <p class="text-danger" id="nameError"></p>
+        </div>
+        <div class="form-group mb-3">
+          <input class="form-control" id="phone" type="number" name="fono" placeholder="Fono (opcional)" inputmode="tel">
+          <p class="text-danger" id="phoneError"></p>
+        </div>
+        <div class="form-group mb-3">
+          <input class="form-control" id="email" type="email" name="email" placeholder="Email">
+          <p class="text-danger" id="emailError"></p>
+        </div>
+        <div class="form-group mb-3">
+          <textarea class="form-control" id="message" name="mensaje" placeholder="Mensaje" rows="14"></textarea>
+          <p class="text-danger" id="messageError"></p>
+        </div>
+        <div class="form-group mb-3">
+          <button class="btn btn-primary" type="submit">Enviar </button>
+        </div>
         <div class="form-group mb-3">
             <p class="text-center text-info" style="font-size: 12px;">Copyright © 2023 Los Borbotones</p>
         </div>
