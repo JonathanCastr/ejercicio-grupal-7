@@ -5,7 +5,7 @@
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
-        rgba(80, 80, 80, 0.5)
+        rgba(0,0,0,0.5)
     ) 
     ,url("/assets/img/AdobeStock_570151844_Preview.jpeg");
     background-size: cover;
@@ -15,14 +15,15 @@
 .titulo_telovendo{
     color: #ffffff;
     height: 90vh;
-    padding-top: 6em;
+    padding-top: 5em;
     font-size: 3em;
+
 }
 
 .device{
-    width: 8em;
-    height: 8em;
+    width: 10em;
+    height: 10em;
 }
 .intro{
-    text-align: justify;
+    text-align: center;
 }
