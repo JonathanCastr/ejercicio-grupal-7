@@ -1,0 +1,16 @@
+.fondo{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("/assets/img/AdobeStock_570151844_Preview.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.titulo_telovendo{
+    color: #fff;
+    height: 90vh;
+    padding-top: 6em;
+    font-size: 3em;
+}
