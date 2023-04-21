@@ -23,7 +23,7 @@
 .device{
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
-    border: 1px solid red;
+    box-shadow: 0px 30px 8px -20px;
 }
 .intro{
     text-align: center;
