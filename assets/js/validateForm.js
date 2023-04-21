@@ -15,8 +15,8 @@ form.addEventListener('submit', (e) => {
 
   const errors = {
     name: 'Debe ingresar un nombre',
-    phone: 'Debe ingresar un numero de 9 digitos o dejar en blanco',
-    email: 'Debe ingresar un correo valido',
+    phone: 'Debe ingresar un número de 9 dígitos o dejar en blanco',
+    email: 'Debe ingresar un correo válido',
     message: 'Debe ingresar un mensaje'
   };
 
@@ -30,18 +30,32 @@ form.addEventListener('submit', (e) => {
   emailError.textContent = errors.email;
   messageError.textContent = errors.message;
 
-  // pendiente validacion total para hacer el submit
+  // validacion final antes el submit
+  const errorsArray = Object.values(errors);
+
+  const isEmtyString = (string) => string === '';
+  
+  if (errorsArray.every(isEmtyString)) {
+    
+    alert('mensaje enviado');
+    // limpiar formulario
+    name.value = '';
+    phone.value = '';
+    email.value = '';
+    message.value = '';
+      
+  };
 }
 );
 
-// pendiente
 const isNameValid = (name) => {
+  if (name.length < 2) return false;
   return true;
 };
 
 const isPhoneValid = (phone) => {
-  if (phone.length !== 9 || phone.length !== 0) return false;
-  return true;
+  if (phone.length === 9 || phone.length === 0) return true;
+  return false;
 };
 
 const isEmailValid = (email) => {
@@ -51,8 +65,8 @@ const isEmailValid = (email) => {
   return true;
 };
 
-//pendiente
 const isMessageValid = (message) => {
+  if (message.length < 2) return false;
   return true;
 };
 
@@ -66,7 +80,6 @@ const isMessageValid = (message) => {
 
 // form.addEventListener('submit', (e) => {
 //   e.preventDefault();
-//   console.log('evento');
 //   const emailInput = document.getElementById('emailInput');
 //   const emailError = document.getElementById('emailError');
 //   const passwordInput = document.getElementById('passwordInput');
