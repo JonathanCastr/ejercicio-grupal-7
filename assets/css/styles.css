@@ -9,8 +9,13 @@
     background-repeat: no-repeat;
 }
 .titulo_telovendo{
-    color: #fff;
+    color: #ffffff;
     height: 90vh;
     padding-top: 6em;
     font-size: 3em;
+}
+
+.device{
+    width: 8em;
+    height: 8em;
 }
